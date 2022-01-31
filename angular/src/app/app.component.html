@@ -1,0 +1,26 @@
+<form class="example-form" xmlns="http://www.w3.org/1999/html">
+
+  <div>Cadastro de curso</div>
+
+  <div>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput type="text" [(ngModel)]="usuario.nome" id="nome" name="nome" required>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" [(ngModel)]="usuario.email" id="email" name="email" required>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>senha</mat-label>
+      <input matInput type="password" [(ngModel)]="usuario.senha" id="senha" name="senha" required>
+    </mat-form-field>
+  </div>
+  <div>
+    <button type="button" (click)="cadastrar()"> Cadastrar</button>
+  </div>
+</form>
