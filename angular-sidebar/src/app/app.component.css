@@ -1,0 +1,27 @@
+body
+{
+	background-color: lightyellow;
+}
+fieldset
+{
+	border: 1px solid rgb(0, 137, 205);
+}
+label
+{
+	color: gray;
+}
+legend
+{
+	color: blue;
+	font-weight: bold;
+}
+span
+{
+	color: white;
+	font-size: 14pt;
+}
+button
+{
+	margin: 10px;
+	color: aqua;
+}

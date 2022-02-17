@@ -14,6 +14,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatButtonModule} from "@angular/material/button";
 import {ToolbarRoutingModule} from "../toolbar/toolbar-routing-module";
+import { DadosPessoaisComponent } from './componets/dados-pessoais/dados-pessoais.component';
 
 
 
@@ -22,7 +23,8 @@ import {ToolbarRoutingModule} from "../toolbar/toolbar-routing-module";
     WrapperComponent,
     DashboardsComponent,
     InfoComponent,
-    UserComponent
+    UserComponent,
+    DadosPessoaisComponent
   ],
   imports: [
     CommonModule,

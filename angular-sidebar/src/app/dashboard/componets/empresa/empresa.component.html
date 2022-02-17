@@ -1,0 +1,136 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema de Administração de Serviços</title>
+		<script type="text/javascript">
+			function teste()
+			{
+				alert("Teste com sucesso");
+			}
+		</script>
+	</head>
+	<body>
+	<form name="registroEmpregado" id="registroEmpregado">
+		<fieldset>
+			<legend>Dados da Empresa</legend>
+			<label for="nomeEmpresa">Nome da Empresa:</label>
+			<input type="text" size="70" id="nomeEmpresa" name="nomeEmpresa" required><br><br>
+			<label for="ie">Inscrição Estadual:</label>
+			<input type="text" id="ie" name="ie" required> &nbsp;&nbsp;&nbsp;
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" name="cnpj" required>
+
+			<label for="cep">CEP:</label>
+			<input type="text" size="5" id="cep" name="cep" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="logradouro">Logradouro:</label>
+			<input type="text" size="70" id="logradouro" name="logradouro" required><br><br>
+
+			<label for="numero">Número:</label>
+			<input type="text" size="5" id="numero" name="numero" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="complemento">Complemento:</label>
+			<input type="text" size="65" id="complemento" name="complemento" required>&nbsp;&nbsp;&nbsp;<br><br>
+
+			<label for="bairro">Bairro:</label>
+			<input type="text" size="50" id="bairro" name="bairro" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="cidade">Cidade:</label>
+			<input type="text" size="50" id="cidade" name="cidade" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="uf">UF:</label>
+			<input type="text" size="2" id="uf" name="uf" required>&nbsp;&nbsp;&nbsp;<br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Sócios</legend>
+			<label for="cpf">CPF:</label>
+			<input type="text" size="15" id="cpf" name="cpf" required>&nbsp;&nbsp;&nbsp;
+			<label for="ctps">Carteira de Trabalho:</label>
+			<input type="text" size="15" id="ctps" name="ctps" required> &nbsp;&nbsp;&nbsp;<br><br>
+
+			<label for="rg">RG:</label>
+			<input type="text" size="15" id="rg" name="rg" >&nbsp;&nbsp;&nbsp;
+			<label for="orgaoRg">Órgão Expedidor:</label>
+			<input type="text" size="10" id="orgaoRg" name="orgaoRg">&nbsp;&nbsp;&nbsp;
+			<label for="ufRG">UF:</label>
+			<select name="ufRG" id="ufRG" required>
+				<option value="ac">AC</option>
+				<option value="al">AL</option>
+				<option value="am">AM</option>
+				<option value="ap">AP</option>
+				<option value="ba">BA</option>
+				<option value="ce">CE</option>
+				<option value="df">DF</option>
+				<option value="es">ES</option>
+				<option value="go">GO</option>
+				<option value="ma">MA</option>
+				<option value="mg">MG</option>
+				<option value="ms">MS</option>
+				<option value="mt">MT</option>
+				<option value="pa">PA</option>
+				<option value="pb">PB</option>
+				<option value="pe">PE</option>
+				<option value="pi">PI</option>
+				<option value="pr">PR</option>
+				<option value="rj">RJ</option>
+				<option value="rn">RN</option>
+				<option value="ro">RO</option>
+				<option value="rr">RR</option>
+				<option value="rs">RS</option>
+				<option value="sc">SC</option>
+				<option value="se">SE</option>
+				<option value="sp">SP</option>
+				<option value="to">TO</option>
+			</select>&nbsp;&nbsp;&nbsp;
+
+			<label for="dataExpedicaoRG">Data de Expedição:</label>
+			<input type="date" id="dataExpedicaoRG" name="dataExpedicaoRG" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="departamento">Departamento:</label>
+			<select name="departamento" id="departamento" required>
+				<option value="polivig">001 Polivig</option>
+				<option value="outro">002 Outro</option>
+			</select>&nbsp;&nbsp;&nbsp;
+		</fieldset>		<br><br>
+
+		<input type="button" value="Testar" onclick="teste()">
+		<input type="submit" value="Enviar">
+		<input type="button" name="gravar" value="Gravar">
+	</form>
+	</body>
+</html>
+
+
+<!--
+	<script type="text/javascript">
+	$("#cep").focusout(function(){
+		alert("VCEP");
+		//Início do Comando AJAX
+		$.ajax({
+			//O campo URL diz o caminho de onde virá os dados
+			//É importante concatenar o valor digitado no CEP
+			url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+			//Aqui você deve preencher o tipo de dados que será lido,
+			//no caso, estamos lendo JSON.
+			dataType: 'json',
+			//SUCESS é referente a função que será executada caso
+			//ele consiga ler a fonte de dados com sucesso.
+			//O parâmetro dentro da função se refere ao nome da variável
+			//que você vai dar para ler esse objeto.
+			success: function(resposta){
+				//Agora basta definir os valores que você deseja preencher
+				//automaticamente nos campos acima.
+				$("#logradouro").val(resposta.logradouro);
+				$("#complemento").val(resposta.complemento);
+				$("#bairro").val(resposta.bairro);
+				$("#cidade").val(resposta.localidade);
+				$("#uf").val(resposta.uf);
+				//Vamos incluir para que o Número seja focado automaticamente
+				//melhorando a experiência do usuário
+				$("#numero").focus();
+			}
+		});
+	});
+</script>
+-->

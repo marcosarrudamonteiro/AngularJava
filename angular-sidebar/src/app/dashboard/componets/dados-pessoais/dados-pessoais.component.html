@@ -1,0 +1,264 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema Polivig de Administração de Serviços</title>
+		<script>
+			function teste()
+			{
+				document.write("Foi");
+        alert("Teste com sucesso");
+      }
+		</script>
+	</head>
+	<body>
+	<form name="registroEmpregado" id="registroEmpregado">
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+
+			<label for="nome">Nome</label>
+			<label for="registro" id="lreg"> Nº Registro</label><br>
+			<input type="text" size="60" id="nome" name="nome" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" size="5" id="registro" name="registro" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<!--img src="eu2008.jpg" alt="Foto do Funcionário" style="width:5%"--><br>
+			<label for="nomeMae">Nome da Mãe</label><br>
+			<input type="text" size="60" id="nomeMae" name="nomeMae" ><br>
+			<label for="nomePai">Nome do Pai</label><br>
+			<input type="text" size="60" id="nomePai" name="nomePai"><br>
+			<label for="dataNascimento">Data de Nascimento</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="cidadeNascimento">Cidade</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="ufNascimento">UF de Nascimento</label><br>
+			<input type="date" id="dataNascimento" name="dataNascimento" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="cidadeNascimento" id="cidadeNascimento" required>
+				<option value="saoPaulo">São Paulo</option>
+				<option value="rioDeJaneiro">Rio de Janeiro</option>
+				<option value="beloHorizonte">Belo Horizonte</option>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="ufNascimento" id="ufNascimento" required>
+				<option value="ac">AC</option>
+				<option value="al">AL</option>
+				<option value="am">AM</option>
+				<option value="ap">AP</option>
+				<option value="ba">BA</option>
+				<option value="ce">CE</option>
+				<option value="df">DF</option>
+				<option value="es">ES</option>
+				<option value="go">GO</option>
+				<option value="ma">MA</option>
+				<option value="mg">MG</option>
+				<option value="ms">MS</option>
+				<option value="mt">MT</option>
+				<option value="pa">PA</option>
+				<option value="pb">PB</option>
+				<option value="pe">PE</option>
+				<option value="pi">PI</option>
+				<option value="pr">PR</option>
+				<option value="rj">RJ</option>
+				<option value="rn">RN</option>
+				<option value="ro">RO</option>
+				<option value="rr">RR</option>
+				<option value="rs">RS</option>
+				<option value="sc">SC</option>
+				<option value="se">SE</option>
+				<option value="sp">SP</option>
+				<option value="to">TO</option>
+			</select><br>
+			<label for="sexo">Sexo</label> espaco10
+			<label for="nacionalidade">Nacionalidade:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="estadoCivil">Estado Civil</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="grauInstrucao">Grau de Instrução:</label><br>
+			<select name="sexo" id="sexo" required>
+				<option value="masculino">Masculino</option>
+				<option value="feminino">Feminino</option>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="nacionalidade" id="nacionalidade" required>
+				<option value="brasileira">Brasileira</option>
+				<option value="argentina">Argentina</option>
+				<option value="espanhola">Espanhola</option>
+				<option value="portuguesa">Portuguesa</option>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select name="estadoCivil" id="estadoCivil" required>
+				<option value="Solteiro">Solteiro</option>
+				<option value="Casado">Casado</option>
+				<option value="Separado">Separado</option>
+				<option value="Divorciado">Divorciado</option>
+				<option value="Viúvo">Viúvo</option>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<!-- </console estadoCivil </console>-->
+			<select name="grauInstrucao" id="grauInstrucao" required>
+				<option value="Primário">Primário</option>
+				<option value="Ginasial">Ginasial</option>
+				<option value="Colegial">Colegial</option>
+				<option value="Superior Incompleto">Superior Incompleto</option>
+				<option value="Superior Completo">Superior Completo</option>
+				<option value="Especialista">Especialista</option>
+				<option value="Mestre">Mestre</option>
+				<option value="Doutor">Doutor</option>
+				<option value="Livre Docente">Livre Docente</option>
+			</select><br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Endereco</legend>
+			<label for="cep">CEP</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;
+			<label for="numero">Número</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="complemento">Complemento</label><br>
+
+			<input type="text" size="8" id="cep" name="cep" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" size="10" id="numero" name="numero" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" size="20" id="complemento" name="complemento" required><br>
+
+			<label for="logradouro">Logradouro</label><br>
+			<input type="text" size="75" id="logradouro" name="logradouro" required><br>
+			<label for="bairro">Bairro</label><br>
+			<input type="text" size="75" id="bairro" name="bairro" required><br>
+
+			<label for="cidade">Cidade</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="uf">UF</label><br>
+			<input type="text" size="50" id="cidade" name="cidade" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" size="2" id="uf" name="uf" required><br>
+
+			<label for="email">Email</label><br>
+			<input type="email" size="75" id="email" name="email"><br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Documentos</legend>
+			<label for="cpf">CPF:</label>
+			<input type="text" size="15" id="cpf" name="cpf" required>&nbsp;&nbsp;&nbsp;
+			<label for="ctps">Carteira de Trabalho:</label>
+			<input type="text" size="15" id="ctps" name="ctps" required> &nbsp;&nbsp;&nbsp;<br><br>
+
+			<label for="rg">RG:</label>
+			<input type="text" size="15" id="rg" name="rg" >&nbsp;&nbsp;&nbsp;
+			<label for="orgaoRg">Órgão Expedidor:</label>
+			<input type="text" size="10" id="orgaoRg" name="orgaoRg">&nbsp;&nbsp;&nbsp;
+			<label for="ufRG">UF:</label>
+			<select name="ufRG" id="ufRG" required>
+				<option value="ac">AC</option>
+				<option value="al">AL</option>
+				<option value="am">AM</option>
+				<option value="ap">AP</option>
+				<option value="ba">BA</option>
+				<option value="ce">CE</option>
+				<option value="df">DF</option>
+				<option value="es">ES</option>
+				<option value="go">GO</option>
+				<option value="ma">MA</option>
+				<option value="mg">MG</option>
+				<option value="ms">MS</option>
+				<option value="mt">MT</option>
+				<option value="pa">PA</option>
+				<option value="pb">PB</option>
+				<option value="pe">PE</option>
+				<option value="pi">PI</option>
+				<option value="pr">PR</option>
+				<option value="rj">RJ</option>
+				<option value="rn">RN</option>
+				<option value="ro">RO</option>
+				<option value="rr">RR</option>
+				<option value="rs">RS</option>
+				<option value="sc">SC</option>
+				<option value="se">SE</option>
+				<option value="sp">SP</option>
+				<option value="to">TO</option>
+			</select>&nbsp;&nbsp;&nbsp;
+
+			<label for="dataExpedicaoRG">Data de Expedição:</label>
+			<input type="date" id="dataExpedicaoRG" name="dataExpedicaoRG" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="certificadoMilitar">Certificado Militar:</label>
+			<input type="text" size="15" id="certificadoMilitar" name="certificadoMilitar" required><br><br>
+
+			<label for="pisPasep">PIS/PASEP:</label>
+			<select name="pisPasep" id="pisPasep" required>
+				<option value="pis">PIS</option>
+				<option value="pasep">PASEP</option>
+			</select>&nbsp;&nbsp;&nbsp;
+			<input type="text" size="10" id="numPisPasep" name="numPisPasep" >&nbsp;&nbsp;&nbsp;
+
+			<label for="dataExpedicaoPisPasep">Data de Expedição:</label>
+			<input type="date" id="dataExpedicaoPisPasep" name="dataExpedicaoPisPasep" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="tituloEleitor">Título de Eleitor:</label>
+			<input type="text" size="15" id="tituloEleitor" name="tituloEleitor" required>&nbsp;&nbsp;&nbsp;
+
+			<label for="cnh">Habilitação:</label>
+			<input type="text" size="15" id="cnh" name="cnh" required>
+		</fieldset>
+
+		<fieldset>
+			<legend>Lotação Organizacional</legend>
+			<label for="centroCusto">Centro de Custo:</label>
+			<select name="centroCusto" id="centroCusto" required>
+				<option value="geral">000001 Geral </option>
+				<option value="outros">000002 Outros</option>
+			</select>&nbsp;&nbsp;&nbsp;
+
+			<label for="departamento">Departamento:</label>
+			<select name="departamento" id="departamento" required>
+				<option value="polivig">001 Polivig</option>
+				<option value="outro">002 Outro</option>
+			</select>&nbsp;&nbsp;&nbsp;
+		</fieldset>		<br><br>
+
+		<input type="button" value="Testar" onclick="teste()">
+		<input type="submit" value="Enviar">
+	</form>
+	</body>
+</html>
+
+
+<!--
+	<script type="text/javascript">
+	$("#cep").focusout(function(){
+		alert("VCEP");
+		//Início do Comando AJAX
+		$.ajax({
+			//O campo URL diz o caminho de onde virá os dados
+			//É importante concatenar o valor digitado no CEP
+			url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+			//Aqui você deve preencher o tipo de dados que será lido,
+			//no caso, estamos lendo JSON.
+			dataType: 'json',
+			//SUCESS é referente a função que será executada caso
+			//ele consiga ler a fonte de dados com sucesso.
+			//O parâmetro dentro da função se refere ao nome da variável
+			//que você vai dar para ler esse objeto.
+			success: function(resposta){
+				//Agora basta definir os valores que você deseja preencher
+				//automaticamente nos campos acima.
+				$("#logradouro").val(resposta.logradouro);
+				$("#complemento").val(resposta.complemento);
+				$("#bairro").val(resposta.bairro);
+				$("#cidade").val(resposta.localidade);
+				$("#uf").val(resposta.uf);
+				//Vamos incluir para que o Número seja focado automaticamente
+				//melhorando a experiência do usuário
+				$("#numero").focus();
+			}
+		});
+	});
+</script>
+-->

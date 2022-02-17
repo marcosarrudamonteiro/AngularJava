@@ -1,8 +1,4 @@
 body
 {
-	color: green;
-}
-form
-{
 	color: yellow;
 }
