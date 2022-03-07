@@ -1,0 +1,31 @@
+body
+{
+	background-color: rgb(81, 192, 196);
+    padding: 15px;
+}
+form
+{
+	background-color: rgb(224, 255, 248);
+}
+fieldset
+{
+	border: 1px solid rgb(0, 106, 205);
+    margin-top: 15px;
+}
+label
+{
+	color: gray;
+}
+legend
+{
+	color: rgba(0, 0, 255, 0.459);
+	font-weight: bold;
+}
+img
+{
+    position: absolute;
+    top: 40px; right: 40px;
+}
+
+
+

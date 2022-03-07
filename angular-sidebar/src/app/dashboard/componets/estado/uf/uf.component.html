@@ -1,0 +1,17 @@
+<label></label>
+<select id="estado" name="estado"><!--Cria o select na aplicação-->
+  <option></option>
+  <option value="{{uf.uf_id}}" *ngFor="let uf of ufmodel" >
+    {{uf.uf_codigo}}
+  </option>
+</select>
+<!--
+  <option value="{{uf.id}}" *ngFor="let uf of ufmodel" >
+  o *ngFor irá retornar uma coleção com todas as uf e
+  descrições correspondentes da classe UfModel pois a
+  variavel ufmodel foi definida como um vetor da classe UfModel
+  na classe UfComponent:
+
+  export class UfComponent implements OnInit {
+  ufmodel: UfModel[] = [];
+-->

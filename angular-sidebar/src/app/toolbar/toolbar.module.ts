@@ -19,7 +19,7 @@ import {NotificationsComponent} from "./notifications/notifications.component";
 @NgModule({
   declarations: [
     MyaccountComponent,
-    AppsComponent,
+    //AppsComponent,
     NotificationsComponent
   ],
   imports: [
